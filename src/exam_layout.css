@@ -1,0 +1,30 @@
+     
+          #recommended {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top:30px;
+
+          }
+
+          #course_card{
+             display:flex;
+             width:100%;
+             flex-wrap:wrap;
+             gap:10px;
+             align-items:stretch;
+             justify-content:flex-start;
+          }
+
+          @media (max-width:500px)
+          {
+            #recommended {
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                padding-top:30px;
+              
+              }
+          }
+
+
