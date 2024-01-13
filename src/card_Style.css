@@ -1,5 +1,5 @@
 
-#card{
+#card1{
     display:flex;
     width:32%;
     gap:10px;
@@ -15,14 +15,21 @@
    .child_2{
     flex-direction:column;
    }
+   
+#card2{
+  display:flex;
+  width:100%;
+  gap:10px;
+  flex-direction:column;
+ }
 
    @media (max-width:768px){
-     #card{
+     #card1{
         width:48%
      }
    }
    @media (max-width:650px){
-    #card{
+    #card1{
        width:99%
     }
   }

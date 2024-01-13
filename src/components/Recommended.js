@@ -4,6 +4,7 @@ import { useId } from 'react';
 import '../exam_layout.css'
 const Recommended = ({heading,badges,data}) => {
     const badge_id=useId()
+    const course_id=useId()
     return (
         <>
             <div id="recommended_box" className="dark:bg-gray-900" style={{ marginTop: "-1px" }}>
@@ -27,8 +28,8 @@ const Recommended = ({heading,badges,data}) => {
                     }
                     <div id="course_card">
                         {
-                            data.map((element)=>{
-                                return <Course_card details={element} />
+                            data.map((element,index)=>{
+                                return <Course_card id={course_id} details={element} ind={index} />
                             })
                         }
                     </div>
