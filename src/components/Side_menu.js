@@ -6,6 +6,7 @@ const Side_menu = () => {
     const { isChecked, exam_data } = useContext(Sitecontext)
     return (
         <>
+            <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Exam you might interested in</h2>
             <div id="card2" className='dark:bg-gray-900 dark:text-white border-solid border-slate-200 dark:border-slate-600' style={{ borderWidth: "2px", borderRadius: "5px", padding: "5px" }}>
                 {
                     exam_data.map((element) => {
